@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>Cambio de divisas</title>
+</head>
+<body>
+    <section id="seccion">
+    <h1 id="titulo">Calculadora de cambio de divisas</h1>
+    <label for="monto">Monto:</label>
+    <input type="number" id="monto" placeholder="Ingresá el monto">
+    <button id="verificacion" > Verificar disponibilidad </button>
+    <p id="Resultado"> </p>
+    
+    <label for="cambiarDesde">Cambiar desde:</label>
+    <select id="cambiarDesde">
+        <option value="USD">USD</option>
+        <option value="EUR">EUR</option>
+        <option value="GBP">GBP</option>
+        <option value="ARS">ARS</option>
+    </select>
+    
+    <label for="cambiarHacia">Cambiar hacia:</label>
+    <select id="cambiarHacia">
+        <option value="USD">USD</option>
+        <option value="EUR">EUR</option>
+        <option value="GBP">GBP</option>
+        <option value="ARS">ARS</option>
+    </select>
+    
+    <button id="calcular" onclick="calculateExchange()">Calcular</button>
+    
+    <h2>Resultado:</h2>
+    <p id="resultado"></p>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="./script/code.js"></script>
+    </section>  
+</body>
+</html>
